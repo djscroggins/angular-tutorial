@@ -35,3 +35,7 @@ ng g c <name>
 ```
 
 - Every component **must** have a template or templateUrl definition
+
+## Directives
+
+
