@@ -1,0 +1,13 @@
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName"
+  (input)="onUsernameEntry()"
+>
+<p> {{ 'Current username: ' + userName }}</p>
+
+<button
+  class="btn btn-primary"
+  [disabled]="!allowUserNameClear"
+  (click)="onAddUserName()"
+>Add Username</button>
