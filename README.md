@@ -36,6 +36,13 @@ ng g c <name>
 
 - Every component **must** have a template or templateUrl definition
 
+## Property Binding
+- Square brackets []
+- Indicate that we want to bind to some property
+
 ## Directives
+
+- Structural: add or remove elements (prefixed with *) from DOM
+- Attribute: only change element they are placed on
 
 
