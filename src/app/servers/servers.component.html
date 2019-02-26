@@ -27,5 +27,5 @@
 <!--<ng-template #noServer><p>No server was created!</p></ng-template>-->
 <!-- Replace string interpolation with property binding -->
 <p [innerText]="allowNewServer"></p>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+<!--<app-server></app-server>-->
