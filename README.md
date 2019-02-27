@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Tutorial Notes
+
+```
+# Generate new component
+ng generate component <name>
+ng g c <name>
+```
+
+- Every component **must** have a template or templateUrl definition
+
+## Property Binding
+- Square brackets []
+- Indicate that we want to bind to some property
+
+## Directives
+
+- Structural: add or remove elements (prefixed with *) from DOM
+- Attribute: only change element they are placed on
+
+
