@@ -3,7 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-directives-assignment',
   templateUrl: './directives-assignment.component.html',
-  styleUrls: ['./directives-assignment.component.css']
+  // styleUrls: ['./directives-assignment.component.css']
+  styles: [`
+    .white-text {
+      color: white;
+    }
+  `]
 })
 export class DirectivesAssignmentComponent implements OnInit {
   secret = 'hello world!';

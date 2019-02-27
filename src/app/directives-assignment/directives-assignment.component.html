@@ -4,5 +4,7 @@
 <p [hidden]="secretHidden">My precious secret = {{ secret }}</p>
 <!--<ul *ngFor="let toggle of togglesArray"> <li class="more-than-five">{{ toggle }}</li> </ul>-->
 <p
-  *ngFor="let toggle of togglesArray"
-  [ngStyle]="{backgroundColor: getColor()}">{{ toggle }}</p>
+  *ngFor="let toggle of togglesArray; let i = index"
+  [ngStyle]="{backgroundColor: i >= 5 ? 'blue': 'transparent'}"
+  [ngClass]="{'white-text': i >= 5}"
+>{{ toggle }}</p>
