@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="toggleSecret($event)">
+  Display Details
+</button>
+<p [hidden]="secretHidden">My precious secret = {{ secret }}</p>
+<!--<ul *ngFor="let toggle of togglesArray"> <li class="more-than-five">{{ toggle }}</li> </ul>-->
+<p
+  *ngFor="let toggle of togglesArray"
+  [ngStyle]="{backgroundColor: getColor()}">{{ toggle }}</p>
